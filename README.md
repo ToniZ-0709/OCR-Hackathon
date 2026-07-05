@@ -1,19 +1,23 @@
 # Team-15 — ArrayOfSunshine
 
-## The 2nd URA Hackathon 2026 — OCR & Product Name Extraction
+## 🥈 2nd Place Winner — The 2nd URA Hackathon 2026
+### OCR & Product Name Extraction Pipeline
 
-Pipeline for the **SMCE Challenge 2026** (RAISE Lab, HCMUT). Given social-media
+> 🏆 **Achievement:** This repository contains the official solution that secured **Rank 2 (Top 2)** on the final leaderboard for the **SMCE Challenge 2026** (RAISE Lab, HCMUT).
+
+Pipeline designed for the **SMCE Challenge 2026** (RAISE Lab, HCMUT). Given social-media
 thumbnail images (TikTok, Vietnamese FMCG — Phase 1: Pate & Milk; Phase 2 expands
 into cosmetics/skincare, baby formula, and other categories), the system:
 
 1. **OCR** — transcribes all visible text in the image (`ocr_text`).
 2. **Product extraction** — identifies the primary brand and product (`brand_name`, `product_name`).
 
+### 📊 Evaluation Metric & Performance
 Submission is a CSV; the leaderboard score balances Brand F1, Product F1, and Character Error Rate (CER):
 
-    Score = 0.40 * F1_brand + 0.35 * (1 − CER) + 0.25 * F1_product
+$$Score = 0.40 \times F1_{brand} + 0.35 \times (1 − CER) + 0.25 \times F1_{product}$$
 
----
+- **Final Leaderboard Standing:** **2nd Place** 🥈
 
 ## Pipeline overview
 
