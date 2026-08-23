@@ -1,0 +1,1358 @@
+{
+  "audit_type": "independent_visual_audit",
+  "audited_range": "priv_d_0267-priv_d_0400",
+  "audited_count": 134,
+  "inspected_method": "All 134 images were rendered in six contact-sheet batches, with individual full-size inspection of edge cases and all proposed gate disagreements.",
+  "canonical_source": "qwen3_vl_8b_lora/data/manual_review/manual_labels.csv",
+  "scope_assumption": "gate_verdict follows the current qwen3_vl_8b_lora README broad contract: a recognizable brand, named product, branded package, or branded promotional asset is PRESENT. The source dataset was originally FMCG-oriented, so the 13 non-FMCG branded items are flagged as scope-sensitive.",
+  "counts": {
+    "source_present": 51,
+    "source_absent": 83,
+    "audited_gate_agreement": 121,
+    "broad_contract_gate_edits": 13,
+    "summary_ok": 121,
+    "summary_edits": 13
+  },
+  "entries": [
+    {
+      "image_id": "priv_d_0267",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế ba lon sữa bột VitaDairy ColosBaby LACTOFERRIN SYNBIOTIC số 2"
+    },
+    {
+      "image_id": "priv_d_0268",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0269",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0270",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0271",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0272",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0273",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế lon sữa bột VitaDairy ColosBaby Gold PEDIA 1-10 tuổi"
+    },
+    {
+      "image_id": "priv_d_0274",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0275",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0276",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0277",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế lon sữa bột dinh dưỡng VitaDairy CaloSure AMERICA 800g"
+    },
+    {
+      "image_id": "priv_d_0278",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0279",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0280",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0281",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0282",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh quảng cáo điều khiển từ xa máy chiếu Epson.",
+      "confidence": "high",
+      "rationale": "The image visibly shows an Epson projector remote and Epson branding; under the current broad image contract this is a recognizable branded product. It is non-FMCG, so retain ABSENT only if the dataset is explicitly restricted to FMCG.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0283",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế bịch bỉm quần trẻ em TopGia KIDS size L 34 miếng"
+    },
+    {
+      "image_id": "priv_d_0284",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế ly hủ tiếu mì Yes Mom vị thịt bằm 79.2g"
+    },
+    {
+      "image_id": "priv_d_0285",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0286",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế kệ tủ đồ ăn vặt và lon sữa bột Abbott PediaSure Maloedka socola 850g"
+    },
+    {
+      "image_id": "priv_d_0287",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh chụp ba mũ lưỡi trai có họa tiết Hello Kitty.",
+      "confidence": "high",
+      "rationale": "The image visibly shows Hello Kitty-branded/character merchandise. Under the current broad contract this is a recognizable branded product. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0288",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế hai tuýp kem dưỡng săn chắc vòng 1 TM Pharma Sexy Queen plus 75g"
+    },
+    {
+      "image_id": "priv_d_0289",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế hộp sữa bột Anlene BONEMAX hương vani 1.2kg"
+    },
+    {
+      "image_id": "priv_d_0290",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế các hộp kem đánh răng Colgate MaxFresh UltraFreeze"
+    },
+    {
+      "image_id": "priv_d_0291",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế chai tinh chất La Roche-Posay MELA B3 SERUM"
+    },
+    {
+      "image_id": "priv_d_0292",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế hộp thực phẩm bảo vệ sức khỏe Vitabiotics Pregnacare breast-feeding"
+    },
+    {
+      "image_id": "priv_d_0293",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0294",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế hai chai sữa rửa mặt tạo bọt Tơ Tằm Cỏ Mềm Home Lab"
+    },
+    {
+      "image_id": "priv_d_0295",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0296",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế bịch bỉm Gooby Extra x2.5 DRY POWER size M 50 miếng"
+    },
+    {
+      "image_id": "priv_d_0297",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế chai sữa rửa mặt Cetaphil Gentle Skin Cleanser 473ml"
+    },
+    {
+      "image_id": "priv_d_0298",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0299",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0300",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0301",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh chụp can phân bón kích rễ Phát Rễ Amino 1 lít đặt dưới gốc cây.",
+      "confidence": "high",
+      "rationale": "The image visibly shows a labeled Phát Rễ Amino product container. Under the current broad contract this is an identifiable branded product. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0302",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0303",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp các bịch tã bỉm Molfix xếp chồng trên ghế gỗ kèm thông tin khuyến mãi tặng gấu bông và xe chòi"
+    },
+    {
+      "image_id": "priv_d_0304",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp tuýp gel rửa mặt The Cafuné Ginger Gel Cleanser chiết xuất gừng cầm trên tay"
+    },
+    {
+      "image_id": "priv_d_0305",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0306",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0307",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0308",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh cận cảnh hũ kem dưỡng mắt La Mer The Rejuvenating Eye Cream màu xanh ngọc nắp bạc"
+    },
+    {
+      "image_id": "priv_d_0309",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp chai dầu dưỡng thể Body Oil nắp bạc cầm trên tay cạnh mô hình Patrick Star"
+    },
+    {
+      "image_id": "priv_d_0310",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp 4 gói mì dao cắt Sơn Tây Jinmailang hương vị thịt kho bao bì màu vàng đặt trên bàn"
+    },
+    {
+      "image_id": "priv_d_0311",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Banner thông tin Thư Viện Pháp Luật về việc thu hồi sản phẩm sữa tắm X-Men For Boss Intense và nước rửa tay Botanika"
+    },
+    {
+      "image_id": "priv_d_0312",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp bịch tã bỉm trẻ em Jolie Soft Care Baby Diapers size M 50 miếng đặt trên nền gạch"
+    },
+    {
+      "image_id": "priv_d_0313",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp các thùng sữa bột VitaDairy ColosBaby Gold 0+ Vị Thanh Nhạt xếp chồng trong cửa hàng"
+    },
+    {
+      "image_id": "priv_d_0314",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp các thùng sữa đặc có đường Ông Thọ xếp chồng cùng các bình ủ và hộp sữa tươi Vinamilk"
+    },
+    {
+      "image_id": "priv_d_0315",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp chai kem dưỡng ẩm Paula's Choice Peptide Pro-Collagen Peptide Plumping Moisturizer 50ml trên tay tại kệ mỹ phẩm"
+    },
+    {
+      "image_id": "priv_d_0316",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp chai gel rửa mặt SVR Sebiaclear Gel Moussant 400ml màu xanh lá cầm trên tay"
+    },
+    {
+      "image_id": "priv_d_0317",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0318",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0319",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp bánh xà bông và vỏ hộp xà bông Soritox Repair Soap 100gr cầm trên tay"
+    },
+    {
+      "image_id": "priv_d_0320",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Đồ họa y tế giới thiệu thuốc amivantamab của Bệnh viện Phương Đông.",
+      "confidence": "high",
+      "rationale": "The graphic visibly names amivantamab and carries Phương Đông branding. Under the current broad contract this is a named branded product asset. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0321",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0322",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp hộp siro bổ sung kẽm cho bé ST ZinC Kids Kẽm Gluconate cầm trên tay"
+    },
+    {
+      "image_id": "priv_d_0323",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0324",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp hộp serum dưỡng da đầu và tóc Bio-Placental Scalp Serum cầm trên tay"
+    },
+    {
+      "image_id": "priv_d_0325",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0326",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp tuýp sữa rửa mặt Hada Labo Advanced Nourish Hyaluronic Acid Cleanser cầm trên tay cạnh bình hoa tulip"
+    },
+    {
+      "image_id": "priv_d_0327",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp tô bún nước tương gồm chả đậu hũ dưa leo rau sống và các chai nước tương ăn bún"
+    },
+    {
+      "image_id": "priv_d_0328",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0329",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh chụp ốp lưng điện thoại trong suốt in hình Hello Kitty.",
+      "confidence": "high",
+      "rationale": "The image visibly shows a Hello Kitty product/character design on a phone case. Under the current broad contract this is a recognizable branded product. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0330",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0331",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0332",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp vỏ hộp tinh chất dưỡng da Dr. Belmeur Daily Repair Cream In Ampoule cầm trên tay"
+    },
+    {
+      "image_id": "priv_d_0333",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0334",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0335",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0336",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0337",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp hộp nhang hương trầm bắc Hương Trầm Minh Khang loại đặc biệt màu xanh lá cây"
+    },
+    {
+      "image_id": "priv_d_0338",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0339",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0340",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0341",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp tuýp và vỏ hộp kem dưỡng ẩm mềm da cho bé Kutieskin 30g màu xanh dương"
+    },
+    {
+      "image_id": "priv_d_0342",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0343",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0344",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp lon sữa bột VitaDairy ColosBaby Lactoferrin 0+ màu vàng nhạt cầm trên tay"
+    },
+    {
+      "image_id": "priv_d_0345",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0346",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp gói hạt nêm rau củ Fuja foods cầm trên tay"
+    },
+    {
+      "image_id": "priv_d_0347",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0348",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Banner tin tức báo chí về việc thu hồi sản phẩm sữa tắm nước hoa nam X-Men For Boss Intense"
+    },
+    {
+      "image_id": "priv_d_0349",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0350",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0351",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0352",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh chụp ấm đun nước siêu tốc Bear màu trắng.",
+      "confidence": "high",
+      "rationale": "The image visibly shows a Bear-branded electric kettle. Under the current broad contract this is a recognizable branded product. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0353",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0354",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh chụp bộ cây lau nhà Kitimop kèm thùng chứa và vỏ hộp.",
+      "confidence": "high",
+      "rationale": "The image visibly shows Kitimop branding on a boxed mop set. Under the current broad contract this is a recognizable branded product. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0355",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh chụp ấm đun siêu tốc GUGKDD dung tích 2,5 lít.",
+      "confidence": "high",
+      "rationale": "The image visibly shows the GUGKDD-branded 2.5-liter kettle. Under the current broad contract this is a recognizable branded product. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0356",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp cận cảnh hộp sữa tươi công thức Nutifood Värna life hỗ trợ xương khớp chắc khỏe đang được mở nắp"
+    },
+    {
+      "image_id": "priv_d_0357",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0358",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh đồ họa hướng dẫn chu trình chăm sóc da khô gồm 4 bước với bộ mỹ phẩm dưỡng da Klairs"
+    },
+    {
+      "image_id": "priv_d_0359",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế hộp và chai siro nhỏ giọt LineaBon K2+D3 10ml bổ sung vitamin cho trẻ nhỏ"
+    },
+    {
+      "image_id": "priv_d_0360",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0361",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0362",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0363",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh chụp dàn nóng điều hòa Mitsubishi Heavy Industries Heavy Duty Inverter.",
+      "confidence": "high",
+      "rationale": "The image visibly shows Mitsubishi Heavy Industries Heavy Duty Inverter branding on the air-conditioner unit. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0364",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Banner quảng cáo bột khử mùi Thái Dương Longtime chiết xuất tinh dầu ngải cứu kèm quà tặng tuýp dầu gội dược liệu Thái Dương 7+"
+    },
+    {
+      "image_id": "priv_d_0365",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0366",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0367",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0368",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế hai chai nước vệ sinh giày Sneaker dạng đầu cọ tạo bọt cầm trên tay tại bãi biển"
+    },
+    {
+      "image_id": "priv_d_0369",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp cận cảnh lon sữa bột Abbott PediaSure PeptiGro hương vani 1,6kg cho trẻ từ 1-10 tuổi"
+    },
+    {
+      "image_id": "priv_d_0370",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0371",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế hộp sữa pha sẵn Nutifood Sweden GrowPLUS+ bạc ít ngọt 110ml cầm trên tay kèm ảnh chụp màn hình ưu đãi sàn thương mại"
+    },
+    {
+      "image_id": "priv_d_0372",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0373",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0374",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0375",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế hai lọ thực phẩm chức năng General Balance Calcium Magnesium và General Balance Plant Based MSM đặt trên nền vải nhung xanh"
+    },
+    {
+      "image_id": "priv_d_0376",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp bát bột ăn dặm HiPP Semolina bí đỏ đang được khuấy bằng thìa bên cạnh vỏ hộp HiPP"
+    },
+    {
+      "image_id": "priv_d_0377",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp cận cảnh tuýp sữa rửa mặt tạo bọt đất sét Nivea Pearl Bright Microbubbles 5 in 1 cầm trên tay tại kệ hàng"
+    },
+    {
+      "image_id": "priv_d_0378",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0379",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0380",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh chụp bộ dụng cụ cào gãi lưng Kingcraft đóng gói.",
+      "confidence": "high",
+      "rationale": "The image visibly shows a packaged Kingcraft back-scratcher set. Under the current broad contract this is a recognizable branded product. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0381",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0382",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế hai tuýp sữa rửa mặt cấp ẩm Awsooyor Hyaluronic Acid Cleanser cầm trên tay"
+    },
+    {
+      "image_id": "priv_d_0383",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0384",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0385",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh quảng cáo bộ sạc dự phòng Anker 165W kèm hộp sản phẩm.",
+      "confidence": "high",
+      "rationale": "The image visibly shows Anker 165W branding and the boxed charging product. Under the current broad contract this is a recognizable branded product. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0386",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp cận cảnh lon sữa bột Abbott Similac Total Protection 5-HMO đặt trên bàn"
+    },
+    {
+      "image_id": "priv_d_0387",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0388",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0389",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0390",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh mở hộp kỷ niệm 10.000 đơn hàng của Mysticperfume trên Shopify.",
+      "confidence": "high",
+      "rationale": "The image visibly shows a branded Mysticperfume box and the 10,000-order milestone. Under the current broad contract this is a branded promotional/product asset. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0391",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế tuýp sữa rửa mặt cám gạo Civic Rice Milk Cleansing Cream cầm trên tay"
+    },
+    {
+      "image_id": "priv_d_0392",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0393",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế hộp và chai siro nhỏ giọt Fitolabs D3&K2 bổ sung vitamin cho bé cầm trên tay ngoài trời"
+    },
+    {
+      "image_id": "priv_d_0394",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0395",
+      "source_gate": "ABSENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh chụp máy ảnh Canon EOS R kèm ống kính RF 85mm f/2.",
+      "confidence": "high",
+      "rationale": "The image visibly shows a Canon EOS R camera and RF 85mm lens. Under the current broad contract this is a recognizable branded product. It is non-FMCG, so retain ABSENT only under a strict FMCG-only scope.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0396",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0397",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0398",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0399",
+      "source_gate": "ABSENT",
+      "gate_verdict": "ABSENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "The image does not visibly contain a recognizable branded FMCG product or branded product package; it is a scene, news/graphic asset, generic object, or unreadable item, so the empty gate agrees under the strict FMCG-oriented contract.",
+      "source_summary": null
+    },
+    {
+      "image_id": "priv_d_0400",
+      "source_gate": "PRESENT",
+      "gate_verdict": "PRESENT",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "high",
+      "rationale": "The image visibly contains the branded/named product or promotional asset described by the source summary; no material content mismatch was observed.",
+      "source_summary": "Ảnh chụp thực tế vỉ viên uống hỗ trợ sinh lý Ngựa Thái màu xanh lá và vỏ hộp kim loại cầm trên tay"
+    }
+  ]
+}

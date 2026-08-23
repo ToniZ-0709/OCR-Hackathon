@@ -1,0 +1,1066 @@
+[
+  {
+    "image_id": "priv_d_0134",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0135",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Banner du lịch Hoàng Thành Travel giới thiệu Huế và Đầm phá Tam Giang.",
+    "confidence": "high",
+    "rationale": "Logo HOÀNG THÀNH TRAVEL is clearly visible at lower right; the current ABSENT gate misses a branded promotional asset."
+  },
+  {
+    "image_id": "priv_d_0136",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0137",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0138",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0139",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Hai ly trà sữa SHARE, trong đó nhãn trên ly ghi trà sữa bơ phô mai mặn và trà xanh.",
+    "confidence": "high",
+    "rationale": "The image visibly repeats the shop name Trà Sữa SHARE in the header and cup labels; current ABSENT gate is wrong."
+  },
+  {
+    "image_id": "priv_d_0140",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Các ly Tiramisu by Share và đồ ăn vặt của Trà Sữa SHARE.",
+    "confidence": "high",
+    "rationale": "Trà Sữa SHARE and Tiramisu by Share are clearly printed on the cups and overlays; current ABSENT gate is wrong."
+  },
+  {
+    "image_id": "priv_d_0141",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0142",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0143",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0144",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Banner về son Bernice Cream Lipstick và kết quả kiểm nghiệm của NEWCENLAB.",
+    "confidence": "high",
+    "rationale": "NEWCENLAB and Bernice Cream Lipstick are explicitly readable in the branded graphic; current ABSENT gate is wrong."
+  },
+  {
+    "image_id": "priv_d_0145",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Ô tô Toyota.",
+    "confidence": "high",
+    "rationale": "The Toyota emblem is visibly present on the front grille; current ABSENT gate misses a recognizable brand."
+  },
+  {
+    "image_id": "priv_d_0146",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0147",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Banner quảng cáo kem chống nắng Sun Cream Lucas.",
+    "confidence": "high",
+    "rationale": "SUN CREAM LUCAS and Lucas branding are clearly visible; the source summary overcommits to an exact SPF/PA notation that is not needed."
+  },
+  {
+    "image_id": "priv_d_0148",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0149",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0150",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0151",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Bông mút rửa mặt Amortals màu xanh lá.",
+    "confidence": "high",
+    "rationale": "AMORTALS is clearly visible, but the pictured item is a round cleansing sponge rather than a droplet makeup sponge."
+  },
+  {
+    "image_id": "priv_d_0152",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0153",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0154",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0155",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0156",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0157",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0158",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0159",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0160",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0161",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0162",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0163",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0164",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0165",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0166",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0167",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0168",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0169",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0170",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0171",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0172",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "",
+    "confidence": "high",
+    "rationale": "The image shows generic packaged sponge cake with no recognizable brand, named branded product, or branded package; current PRESENT gate is unsupported."
+  },
+  {
+    "image_id": "priv_d_0173",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0174",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0175",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Banner quảng cáo kem chống nắng Sun Cream Lucas của Đan Thy.",
+    "confidence": "high",
+    "rationale": "Lucas/Dan Thy branding and the sunscreen product are clearly visible; exact SPF/PA details are not necessary for a grounded label."
+  },
+  {
+    "image_id": "priv_d_0176",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "",
+    "confidence": "high",
+    "rationale": "The photo contains generic kimbap, fried food, and takeaway boxes without a readable brand or named branded product; current PRESENT gate is unsupported."
+  },
+  {
+    "image_id": "priv_d_0177",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0178",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0179",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0180",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Ảnh trạm xăng Petrolimex và banner hướng dẫn chi tiêu.",
+    "confidence": "high",
+    "rationale": "PETROLIMEX is prominently readable on the station and sign; current ABSENT gate is wrong."
+  },
+  {
+    "image_id": "priv_d_0181",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0182",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0183",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0184",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0185",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0186",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0187",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0188",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0189",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0190",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0191",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "",
+    "confidence": "high",
+    "rationale": "The graphic names generic bánh bao flavors but shows no recognizable brand or branded product; current PRESENT gate is unsupported."
+  },
+  {
+    "image_id": "priv_d_0192",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0193",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0194",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0195",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0196",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0197",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0198",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0199",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0200",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0201",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0202",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0203",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0204",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0205",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0206",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0207",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0208",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0209",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0210",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Túi chườm ngực tia sữa EMOON.",
+    "confidence": "high",
+    "rationale": "The EMOON logo and branded package are clearly visible; current ABSENT gate is wrong."
+  },
+  {
+    "image_id": "priv_d_0211",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0212",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0213",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0214",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0215",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0216",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0217",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Banner quảng cáo kem chống nắng Sun Cream Lucas của Đan Thy.",
+    "confidence": "high",
+    "rationale": "Lucas/Dan Thy branding and the sunscreen are clearly visible; the exact SPF/PA details in the source summary are unnecessary."
+  },
+  {
+    "image_id": "priv_d_0218",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0219",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0220",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0221",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0222",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0223",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0224",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0225",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0226",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Thú bông Hello Kitty.",
+    "confidence": "high",
+    "rationale": "HELLO KITTY is visibly printed on the plush and is a recognizable branded character; current ABSENT gate is wrong."
+  },
+  {
+    "image_id": "priv_d_0227",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "",
+    "confidence": "high",
+    "rationale": "The image shows generic false eyelashes and boxes with no readable recognizable brand; current PRESENT gate is unsupported."
+  },
+  {
+    "image_id": "priv_d_0228",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0229",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Bản tin giới thiệu pate Cột Đèn Hải Phòng.",
+    "confidence": "high",
+    "rationale": "Pate Cột Đèn is clearly named in the overlay, making this a branded product/news asset; current ABSENT gate is wrong."
+  },
+  {
+    "image_id": "priv_d_0230",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0231",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0232",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0233",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0234",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0235",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0236",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0237",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0238",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Bản tin về pate Cột Đèn của Đồ hộp Hạ Long.",
+    "confidence": "high",
+    "rationale": "The overlay explicitly names pate Cột Đèn and Đồ hộp Hạ Long; current ABSENT gate is wrong."
+  },
+  {
+    "image_id": "priv_d_0239",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0240",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0241",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0242",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0243",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Banner/bản tin bảo vệ thương hiệu pate Cột Đèn.",
+    "confidence": "high",
+    "rationale": "The graphic explicitly says THƯƠNG HIỆU PATE CỘT ĐÈN; current ABSENT gate misses a named branded product."
+  },
+  {
+    "image_id": "priv_d_0244",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0245",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0246",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0247",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0248",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0249",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0250",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0251",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0252",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0253",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0254",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0255",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0256",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0257",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0258",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Điện thoại iPhone 12 Pro Max của Apple.",
+    "confidence": "high",
+    "rationale": "The Apple logo is clearly visible on the phone and the overlay names 12 Pro Max; current ABSENT gate is wrong."
+  },
+  {
+    "image_id": "priv_d_0259",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Chảo Tefal.",
+    "confidence": "high",
+    "rationale": "TEFAL is prominently readable on the pan and overlay; current ABSENT gate is wrong."
+  },
+  {
+    "image_id": "priv_d_0260",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0261",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Banner sự kiện PUBG Mobile/KRAFTON.",
+    "confidence": "high",
+    "rationale": "PUBG MOBILE and KRAFTON logos are clearly visible in the event graphic; current ABSENT gate is wrong."
+  },
+  {
+    "image_id": "priv_d_0262",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0263",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "Visible branded package, product name, or branded promotional asset supports the current PRESENT gate and summary."
+  },
+  {
+    "image_id": "priv_d_0264",
+    "gate_verdict": "PRESENT",
+    "summary_verdict": "EDIT",
+    "corrected_summary": "Nội dung giới thiệu sản phẩm/chế phẩm Trichoderma AAA.",
+    "confidence": "medium",
+    "rationale": "TRICHODERMA AAA is visibly named in the agricultural product/treatment graphic; current ABSENT gate likely misses a named product."
+  },
+  {
+    "image_id": "priv_d_0265",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  },
+  {
+    "image_id": "priv_d_0266",
+    "gate_verdict": "ABSENT",
+    "summary_verdict": "OK",
+    "corrected_summary": null,
+    "confidence": "high",
+    "rationale": "No recognizable brand, named branded product, or branded package is visibly grounded; current ABSENT gate is consistent."
+  }
+]

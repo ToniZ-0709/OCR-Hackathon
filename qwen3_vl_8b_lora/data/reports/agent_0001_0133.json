@@ -1,0 +1,1071 @@
+{
+  "reviewer": "schema_audit_agent",
+  "scope": "priv_d_0001 through priv_d_0133",
+  "method": "Read-only visual inspection using contact sheets plus full-resolution checks for flagged items. This is a bounded audit, not a replacement for final manual approval.",
+  "entries": [
+    {
+      "image_id": "priv_d_0001",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0002",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0003",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0004",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0005",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0006",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0007",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0008",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0009",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0010",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0011",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0012",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0013",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0014",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0015",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0016",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0017",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0018",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0019",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0020",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0021",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0022",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0023",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0024",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0025",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0026",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0027",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0028",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0029",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0030",
+      "gate_verdict": "EDIT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh ghép có ly cà phê Mật Tea & Coffee và các hộp đồ ăn vặt trong không gian quán.",
+      "confidence": "high",
+      "rationale": "The source gate is ABSENT, but the image visibly contains a branded Mật cup and food containers."
+    },
+    {
+      "image_id": "priv_d_0031",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0032",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0033",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0034",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0035",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0036",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0037",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0038",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0039",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0040",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0041",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0042",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0043",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0044",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0045",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0046",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0047",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0048",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0049",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0050",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0051",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0052",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0053",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0054",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0055",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0056",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0057",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0058",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0059",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0060",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0061",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0062",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0063",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0064",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0065",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0066",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0067",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0068",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0069",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0070",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0071",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0072",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0073",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0074",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0075",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0076",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0077",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0078",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0079",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0080",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0081",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0082",
+      "gate_verdict": "EDIT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh ghép quảng bá các món pizza và đồ ăn phủ phô mai của Trà Sữa SHARE.",
+      "confidence": "high",
+      "rationale": "The image visibly carries repeated Trà Sữa SHARE branding, address, and a promotional food collage."
+    },
+    {
+      "image_id": "priv_d_0083",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0084",
+      "gate_verdict": "EDIT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh chụp phần bánh mì kebab tam giác kẹp thịt và rau trên thớt gỗ, kèm hai chén sốt.",
+      "confidence": "high",
+      "rationale": "This image is byte-identical to priv_d_0017, which is labeled PRESENT with the same visible kebab; ABSENT is inconsistent."
+    },
+    {
+      "image_id": "priv_d_0085",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0086",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0087",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0088",
+      "gate_verdict": "EDIT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh quảng bá bánh giò Thành Phát bọc lá chuối, kèm một chiếc đã bóc vỏ lộ nhân thịt và trứng cút.",
+      "confidence": "high",
+      "rationale": "This image is byte-identical to priv_d_0211, which is labeled PRESENT; the visible Thành Phát food branding supports PRESENT."
+    },
+    {
+      "image_id": "priv_d_0089",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0090",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0091",
+      "gate_verdict": "EDIT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh quảng bá hũ thịt chưng mắm tép của Bếp Mẹ Shunhiken dùng kèm cơm.",
+      "confidence": "high",
+      "rationale": "The image visibly shows a labeled jar, the Bếp Mẹ Shunhiken logo, and the product name; ABSENT omits a branded product."
+    },
+    {
+      "image_id": "priv_d_0092",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0093",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0094",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0095",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0096",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0097",
+      "gate_verdict": "EDIT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh quảng bá các combo đồ ăn vặt của Trà Sữa SHARE, gồm pizza, khoai tây chiên, nem chua rán và món chiên.",
+      "confidence": "high",
+      "rationale": "The image visibly repeats Trà Sữa SHARE branding, address, and labeled food-combo promotional panels."
+    },
+    {
+      "image_id": "priv_d_0098",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0099",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0100",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0101",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0102",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0103",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0104",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0105",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0106",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0107",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0108",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0109",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0110",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0111",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0112",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0113",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0114",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0115",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0116",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0117",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0118",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0119",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0120",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0121",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0122",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0123",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0124",
+      "gate_verdict": "EDIT",
+      "summary_verdict": "EDIT",
+      "corrected_summary": "Ảnh quảng bá các ly trà sữa và đồ ăn vặt của Trà Sữa SHARE, có nhãn vị Thái đỏ và Thái xanh.",
+      "confidence": "high",
+      "rationale": "The image visibly repeats Trà Sữa SHARE branding and product labels on multiple cups; ABSENT is a clear false negative."
+    },
+    {
+      "image_id": "priv_d_0125",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0126",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0127",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0128",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0129",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0130",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0131",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0132",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    },
+    {
+      "image_id": "priv_d_0133",
+      "gate_verdict": "OK",
+      "summary_verdict": "OK",
+      "corrected_summary": null,
+      "confidence": "medium",
+      "rationale": "Visual contact-sheet inspection found the source gate and summary broadly consistent with the visible image."
+    }
+  ]
+}

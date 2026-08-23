@@ -1,0 +1,24 @@
+# Secrets and local Python environment
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local state and temporary review data
+data/raw/
+data/state.sqlite3
+data/review/review_state.jsonl
+
+# Generated outputs and model artifacts
+artifacts/
+output/
+checkpoints/
+*.tar.gz
+*.zip
+
+# Local IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

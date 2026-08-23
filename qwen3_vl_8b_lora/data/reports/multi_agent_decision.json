@@ -1,0 +1,211 @@
+{
+  "review_mode": "multi-agent-visual-audit",
+  "scope": "FMCG_ONLY",
+  "agent_reports": [
+    "agent_0001_0133.json",
+    "agent_0134_0266.json",
+    "agent_0267_0400.json"
+  ],
+  "audited_rows": 400,
+  "reviewed_rows": 400,
+  "applied_corrections": 21,
+  "retained_non_fmcg_scope_flags": 22,
+  "retained_non_fmcg_ids": [
+    "priv_d_0135",
+    "priv_d_0145",
+    "priv_d_0180",
+    "priv_d_0210",
+    "priv_d_0226",
+    "priv_d_0258",
+    "priv_d_0259",
+    "priv_d_0261",
+    "priv_d_0264",
+    "priv_d_0282",
+    "priv_d_0287",
+    "priv_d_0301",
+    "priv_d_0320",
+    "priv_d_0329",
+    "priv_d_0352",
+    "priv_d_0354",
+    "priv_d_0355",
+    "priv_d_0363",
+    "priv_d_0380",
+    "priv_d_0385",
+    "priv_d_0390",
+    "priv_d_0395"
+  ],
+  "present": 226,
+  "absent": 174,
+  "changes": [
+    {
+      "image_id": "priv_d_0030",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Ảnh ghép có ly cà phê Mật Tea & Coffee và các hộp đồ ăn vặt trong không gian quán.",
+      "report": "agent_0001_0133.json"
+    },
+    {
+      "image_id": "priv_d_0082",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Ảnh ghép quảng bá các món pizza và đồ ăn phủ phô mai của Trà Sữa SHARE.",
+      "report": "agent_0001_0133.json"
+    },
+    {
+      "image_id": "priv_d_0084",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Ảnh chụp phần bánh mì kebab tam giác kẹp thịt và rau trên thớt gỗ, kèm hai chén sốt.",
+      "report": "agent_0001_0133.json"
+    },
+    {
+      "image_id": "priv_d_0088",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Ảnh quảng bá bánh giò Thành Phát bọc lá chuối, kèm một chiếc đã bóc vỏ lộ nhân thịt và trứng cút.",
+      "report": "agent_0001_0133.json"
+    },
+    {
+      "image_id": "priv_d_0091",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Ảnh quảng bá hũ thịt chưng mắm tép của Bếp Mẹ Shunhiken dùng kèm cơm.",
+      "report": "agent_0001_0133.json"
+    },
+    {
+      "image_id": "priv_d_0097",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Ảnh quảng bá các combo đồ ăn vặt của Trà Sữa SHARE, gồm pizza, khoai tây chiên, nem chua rán và món chiên.",
+      "report": "agent_0001_0133.json"
+    },
+    {
+      "image_id": "priv_d_0124",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Ảnh quảng bá các ly trà sữa và đồ ăn vặt của Trà Sữa SHARE, có nhãn vị Thái đỏ và Thái xanh.",
+      "report": "agent_0001_0133.json"
+    },
+    {
+      "image_id": "priv_d_0139",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Hai ly trà sữa SHARE, trong đó nhãn trên ly ghi trà sữa bơ phô mai mặn và trà xanh.",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0140",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Các ly Tiramisu by Share và đồ ăn vặt của Trà Sữa SHARE.",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0144",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Banner về son Bernice Cream Lipstick và kết quả kiểm nghiệm của NEWCENLAB.",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0147",
+      "from_gate": "PRESENT",
+      "to_gate": "PRESENT",
+      "from_summary": "Kem chống nắng SUN CREAM LUCAS SPF 50+ PA+++",
+      "to_summary": "Banner quảng cáo kem chống nắng Sun Cream Lucas.",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0151",
+      "from_gate": "PRESENT",
+      "to_gate": "PRESENT",
+      "from_summary": "Ảnh chụp thực tế bông mút trang điểm giọt nước Amortals màu xanh lá",
+      "to_summary": "Bông mút rửa mặt Amortals màu xanh lá.",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0172",
+      "from_gate": "PRESENT",
+      "to_gate": "ABSENT",
+      "from_summary": "Các hộp bánh bông lan chà bông sốt hoàng kim đóng hộp nhựa trong suốt",
+      "to_summary": "",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0175",
+      "from_gate": "PRESENT",
+      "to_gate": "PRESENT",
+      "from_summary": "Banner quảng cáo kem chống nắng Đan Thy Lucas Sun Cream SPF 50 PA+++ kèm tin nhắn đánh giá",
+      "to_summary": "Banner quảng cáo kem chống nắng Sun Cream Lucas của Đan Thy.",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0176",
+      "from_gate": "PRESENT",
+      "to_gate": "ABSENT",
+      "from_summary": "Bàn tiệc đồ ăn nhanh gồm kimbap cuộn, gà rán sốt, tokbokki và khoai tây chiên đóng hộp",
+      "to_summary": "",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0191",
+      "from_gate": "PRESENT",
+      "to_gate": "ABSENT",
+      "from_summary": "Banner quảng cáo bánh bao phô mai vị xá xíu kéo sợi và gà sợi trứng muối",
+      "to_summary": "",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0217",
+      "from_gate": "PRESENT",
+      "to_gate": "PRESENT",
+      "from_summary": "Hộp và tuýp kem chống nắng Đan Thy Sun Cream Lucas SPF 50 PA+++ trong ảnh phản hồi",
+      "to_summary": "Banner quảng cáo kem chống nắng Sun Cream Lucas của Đan Thy.",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0227",
+      "from_gate": "PRESENT",
+      "to_gate": "ABSENT",
+      "from_summary": "Nhiều vỉ và hộp lông mi giả xếp trên bàn trang điểm",
+      "to_summary": "",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0229",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Bản tin giới thiệu pate Cột Đèn Hải Phòng.",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0238",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Bản tin về pate Cột Đèn của Đồ hộp Hạ Long.",
+      "report": "agent_0134_0266.json"
+    },
+    {
+      "image_id": "priv_d_0243",
+      "from_gate": "ABSENT",
+      "to_gate": "PRESENT",
+      "from_summary": "",
+      "to_summary": "Banner/bản tin bảo vệ thương hiệu pate Cột Đèn.",
+      "report": "agent_0134_0266.json"
+    }
+  ],
+  "api_keys_required": false,
+  "human_in_the_loop": false
+}

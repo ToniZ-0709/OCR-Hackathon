@@ -1,0 +1,37 @@
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Streamlit local state
+.streamlit/secrets.toml
+
+# IDE & Editor Temporary Files
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+.$*.bkp
+*.tmp
+
+# Large Model Checkpoints & Raw Runs (>100MB GitHub limit)
+*.safetensors
+*.bin
+*.pt
+*.pth
+qwen3_vl_8b_lora/artifacts/raw_training_runs/
+qwen3_vl_8b_lora/artifacts/best_adapter/adapter_model.safetensors
+qwen3_vl_8b_lora/artifacts/qwen3_vl_8b_lora_gpu_bundle.tar.gz
+
+# OS generated files
+.DS_Store
+Thumbs.db

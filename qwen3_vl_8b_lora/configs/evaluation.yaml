@@ -1,0 +1,9 @@
+seed: 42
+temperature: 0.0
+max_new_tokens: 128
+human_audit_size: 50
+promotion:
+  minimum_relative_false_nonempty_reduction: 0.25
+  maximum_present_recall_drop: 0.05
+  require_non_decreasing_identifier_f1: true
+

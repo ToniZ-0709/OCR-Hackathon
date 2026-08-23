@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-08-20T03:20:13.280434+00:00",
+  "label_count": 400,
+  "train_count": 350,
+  "validation_count": 50,
+  "external_test_count": 200,
+  "seed": 42,
+  "label_source": "data/manual_source/dataset_400_master.json",
+  "generator": "Existing Gemini-generated labels; original generation metadata unavailable",
+  "verification": "Three independent visual-agent audits recorded in data/reports/",
+  "review_mode": "multi-agent-visual-audit",
+  "scope": "FMCG_ONLY",
+  "human_reviewed": 0,
+  "api_keys_required": false
+}

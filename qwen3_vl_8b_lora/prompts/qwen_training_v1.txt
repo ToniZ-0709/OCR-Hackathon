@@ -1,0 +1,6 @@
+<image>
+Viết một mô tả ngắn bằng tiếng Việt có dấu về nhãn hàng hoặc sản phẩm FMCG có thể nhận diện trực tiếp trong ảnh.
+
+Chỉ nêu thông tin có bằng chứng trực quan. Giữ nguyên chính tả tên nhãn hàng và sản phẩm. Không đoán thông tin bị che khuất, không dùng markdown và không nhắc đến nhiệm vụ. Không mô tả đồ điện tử, xe cộ, du lịch, đồ gia dụng, trò chơi, vật tư nông nghiệp hoặc các sản phẩm không thuộc FMCG.
+
+Nếu ảnh không có nhãn hàng FMCG, tên sản phẩm FMCG, bao bì FMCG có thể nhận diện hoặc tài liệu quảng bá FMCG có thương hiệu, chỉ trả về chuỗi rỗng tuyệt đối.
