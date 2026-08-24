@@ -60,7 +60,7 @@ def inspect_token_lengths(records: list[dict], max_length: int, image_tokens: in
 
     if Qwen3VLForConditionalGeneration.__name__ != "Qwen3VLForConditionalGeneration":
         raise RuntimeError("Wrong Qwen model class")
-    processor = AutoProcessor.from_pretrained("Qwen/Qwen3-VL-8B-Instruct")
+    processor = AutoProcessor.from_pretrained("Qwen/Qwen3-VL-4B-Instruct")
     lengths: list[int] = []
     empty_supervised_lengths: list[int] = []
     max_pixels = image_tokens * 16 * 16
@@ -148,4 +148,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -22,7 +22,6 @@ PORT="${PORT:-8000}"
   --torch_dtype bfloat16 \
   --temperature 0 \
   --max_new_tokens 128 \
-  --served_model_name fmcg-qwen3-vl-8b-lora \
+  --served_model_name fmcg-qwen3-vl-4b-lora \
   --host 0.0.0.0 \
   --port "$PORT"
-

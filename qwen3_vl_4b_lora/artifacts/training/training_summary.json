@@ -1,0 +1,76 @@
+{
+  "run_dir": "/root/team15/qwen3_vl_4b_lora_gpu_bundle/artifacts/training/qwen3_vl_4b_qlora/v0-20260824-154839",
+  "best_checkpoint": "/root/team15/qwen3_vl_4b_lora_gpu_bundle/artifacts/training/qwen3_vl_4b_qlora/v0-20260824-154839/checkpoint-88",
+  "best_eval_loss": 0.76511055,
+  "global_step": 132,
+  "epoch": 3.0,
+  "initial_logged_loss": 4.20076561,
+  "final_logged_loss": 0.70670671,
+  "mean_logged_loss": 1.2321891355555559,
+  "step_weighted_mean_logged_loss": 1.1273082507692307,
+  "peak_logged_token_accuracy": 0.84712482,
+  "final_logged_token_accuracy": 0.83655275,
+  "evaluation_history": [
+    {
+      "eval_loss": 0.80163848,
+      "eval_runtime": 7.9492,
+      "eval_samples_per_second": 6.29,
+      "eval_steps_per_second": 6.29,
+      "eval_token_acc": 0.69495166,
+      "epoch": 1.0,
+      "global_step/max_steps": "44/132",
+      "elapsed_time": "3m 15s",
+      "remaining_time": "6m 30s",
+      "memory(GiB)": 7.15,
+      "train_speed(s/it)": 4.428681
+    },
+    {
+      "eval_loss": 0.76511055,
+      "eval_runtime": 7.9044,
+      "eval_samples_per_second": 6.326,
+      "eval_steps_per_second": 6.326,
+      "eval_token_acc": 0.71428571,
+      "epoch": 2.0,
+      "global_step/max_steps": "88/132",
+      "elapsed_time": "6m 29s",
+      "remaining_time": "3m 14s",
+      "memory(GiB)": 7.15,
+      "train_speed(s/it)": 4.418279
+    },
+    {
+      "eval_loss": 0.79499555,
+      "eval_runtime": 7.9073,
+      "eval_samples_per_second": 6.323,
+      "eval_steps_per_second": 6.323,
+      "eval_token_acc": 0.72502685,
+      "epoch": 3.0,
+      "global_step/max_steps": "132/132",
+      "elapsed_time": "10m 39s",
+      "remaining_time": "0s",
+      "memory(GiB)": 7.15,
+      "train_speed(s/it)": 4.838968
+    }
+  ],
+  "final_training_summary": {
+    "train_runtime": 639.2676,
+    "train_samples_per_second": 1.643,
+    "train_steps_per_second": 0.206,
+    "total_flos": 1.6369067160834048e+16,
+    "train_loss": 1.12138462,
+    "epoch": 3.0,
+    "global_step/max_steps": "132/132",
+    "elapsed_time": "10m 39s",
+    "remaining_time": "0s",
+    "memory(GiB)": 7.15,
+    "train_speed(s/it)": 4.842796
+  },
+  "adapter": {
+    "file": "/root/team15/qwen3_vl_4b_lora_gpu_bundle/artifacts/training/qwen3_vl_4b_qlora/v0-20260824-154839/checkpoint-88/adapter_model.safetensors",
+    "file_size_bytes": 132195448,
+    "tensor_count": 504,
+    "parameter_count": 33030144,
+    "dtypes": [
+      "F32"
+    ]
+  }
+}

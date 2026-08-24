@@ -1,110 +1,91 @@
-# vLLM server for the fine-tuned Qwen3-VL-8B
+# vLLM service for the fine-tuned Qwen3-VL-4B
 
-This is the verified setup for the current H100 20 GB MIG server.
+## Current server state
 
-## Current deployment
+| Item | Value |
+|---|---|
+| Python environment | `/root/team15/vllm_venv` |
+| Merged BF16 checkpoint | `/root/team15/qwen3_vl_4b_merged` |
+| Best LoRA adapter | `/root/team15/qwen3_vl_4b_best_adapter` |
+| Served model ID | `fmcg-qwen3-vl-4b-lora` |
+| API | `http://127.0.0.1:25241/v1` |
+| Service script | `/root/team15/Phase3/vllm_service.sh` |
+| Log | `/root/team15/vllm.log` |
+| PID file | `/root/team15/vllm.pid` |
 
-- vLLM environment: `/root/team15/vllm_venv`
-- Merged fine-tuned model: `/root/team15/qwen3_vl_8b_merged`
-- Original LoRA adapter, kept unchanged: `/root/team15/best_adapter`
-- API port: `25241`
-- API model ID: `fmcg_lora`
-- Maximum request length: `4096` tokens
-- vLLM log: `/root/team15/vllm.log`
-- vLLM PID file: `/root/team15/vllm.pid`
+The server is currently sharing the 20 GB MIG with an unrelated GPU job. The service therefore reads the clean merged BF16 checkpoint and quantizes it through vLLM's BitsAndBytes loader. This is different from serving the ms-swift pre-quantized export, which is not compatible with the vLLM 0.11 Qwen3-VL loader.
 
-The adapter is merged into a separate BF16 checkpoint for serving. vLLM 0.11 has a Qwen3-VL dynamic-LoRA bug that crashes on image requests, even when the adapter contains only language-model weights. Do not add `--enable-lora` or `--lora-modules` to this command.
+Current defaults:
 
-## Start vLLM
+- BitsAndBytes 0.50.1 on-load quantization.
+- GPU memory utilization 0.44.
+- Maximum model length 4,096 tokens.
+- Maximum six active sequences.
+- Maximum 1,024 batched prefill tokens per scheduling step.
+- Maximum 802,816 image pixels, equivalent to the 1,024-image-token training cap.
+- Vision attention forced to PyTorch SDPA.
 
-Run on the GPU server:
+The SDPA compatibility shim is in `vllm_compat/sitecustomize.py`. It is required because the installed FlashAttention PTX was compiled with a newer CUDA toolchain than the server's NVIDIA driver can execute. The shim is loaded only by this service and does not modify the shared Python installation.
+
+## One-time environment setup
+
+The current server is already configured. On a recreated environment, install:
 
 ```bash
-source /root/team15/vllm_venv/bin/activate
-
-nohup env LD_LIBRARY_PATH=/usr/local/cuda/compat/lib \
-  python -m vllm.entrypoints.openai.api_server \
-  --model /root/team15/qwen3_vl_8b_merged \
-  --served-model-name fmcg_lora \
-  --host 0.0.0.0 \
-  --port 25241 \
-  --max-model-len 4096 \
-  --gpu-memory-utilization 0.90 \
-  --max-num-seqs 1 \
-  --enforce-eager \
-  --limit-mm-per-prompt '{"image":1,"video":0}' \
-  --skip-mm-profiling \
-  > /root/team15/vllm.log 2>&1 < /dev/null &
-
-echo $! > /root/team15/vllm.pid
+/root/team15/vllm_venv/bin/pip install -r /root/team15/Phase3/requirements-vllm.txt
 ```
 
-Startup normally takes about 30 seconds. Follow it with:
+## Start and watch the service
 
 ```bash
-tail -f /root/team15/vllm.log
+/root/team15/Phase3/vllm_service.sh start
+/root/team15/Phase3/vllm_service.sh logs
 ```
 
-The server is ready when the log contains `Application startup complete`.
+Wait for:
 
-## Check vLLM
+```text
+Application startup complete
+```
+
+Press `Ctrl+C` to leave the log view. This does not stop vLLM.
+
+## Check the endpoint
 
 ```bash
-curl -i http://127.0.0.1:25241/health
+/root/team15/Phase3/vllm_service.sh status
 curl -s http://127.0.0.1:25241/v1/models
 ```
 
-Expected results:
-
-- `/health` returns HTTP 200.
-- `/v1/models` lists `fmcg_lora`.
-
-## Start ngrok
-
-From the current `~` prompt, run:
-
-```bash
-/root/ngrok http 25241
-```
-
-Leave that terminal open. ngrok will print the public forwarding URL. Use that URL as the Streamlit API base, adding `/v1`. For example:
+Expected model ID:
 
 ```text
-https://your-current-ngrok-url.ngrok-free.dev/v1
+fmcg-qwen3-vl-4b-lora
 ```
 
-If you started ngrok in the foreground, press `Ctrl+C` to stop it. If the public URL reports offline, check the local tunnel and log:
+Streamlit must use:
+
+```text
+VLLM_BASE_URL=http://127.0.0.1:25241/v1
+VLLM_MODEL_ID=fmcg-qwen3-vl-4b-lora
+```
+
+## Stop or restart
 
 ```bash
-curl -s http://127.0.0.1:4040/api/tunnels
-tail -n 30 /root/team15/ngrok.log
+/root/team15/Phase3/vllm_service.sh stop
+/root/team15/Phase3/vllm_service.sh restart
 ```
 
-## Streamlit settings
+The stop command resolves the live process by API port, sends `SIGTERM` to the full process group, waits up to 15 seconds, and then uses `SIGKILL` only if required. Do not stop vLLM with `kill -TERM "$(cat /root/team15/vllm.pid)"`, because the PID file may be stale and the EngineCore child can survive.
 
-- API Base URL: `<public URL printed above>/v1`
-- Model ID: `fmcg_lora`
+## Verified deployment evidence
 
-## Stop the services
+- vLLM 0.11.0 health endpoint returned HTTP 200.
+- `/v1/models` returned `fmcg-qwen3-vl-4b-lora`.
+- One real validation image completed successfully.
+- Six concurrent image requests completed 6 of 6 in 6.078 seconds.
+- Measured concurrent smoke-test throughput was 0.987 images per second.
+- vLLM remained healthy after the six-request test.
 
-Check the recorded process before stopping it:
-
-```bash
-ps -p "$(cat /root/team15/vllm.pid)" -o pid,cmd
-ps -p "$(cat /root/team15/ngrok.pid)" -o pid,cmd
-```
-
-Then stop the exact recorded processes:
-
-```bash
-kill -TERM "$(cat /root/team15/vllm.pid)"
-kill -TERM "$(cat /root/team15/ngrok.pid)"
-```
-
-## Verified on this server
-
-- CUDA and vLLM imports succeeded on the H100 20 GB MIG.
-- Local `/health` and `/v1/models` returned HTTP 200.
-- A 206 x 206 image request succeeded.
-- The largest bundled image, 1500 x 2000 and 2,946 prompt tokens, succeeded.
-- Public ngrok `/health` and `/v1/models` returned HTTP 200.
+The six-request result is a serving smoke test, not the 50-image quality benchmark. See `LORA_TRAINING_REPORT.md` for model-quality metrics.

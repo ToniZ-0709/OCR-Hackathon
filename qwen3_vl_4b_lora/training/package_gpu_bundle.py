@@ -56,7 +56,7 @@ def build(output: Path, include_external_test: bool = False) -> Path:
 
     output.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="qwen_lora_bundle_") as temporary:
-        bundle_root = Path(temporary) / "qwen3_vl_8b_lora_gpu_bundle"
+        bundle_root = Path(temporary) / "qwen3_vl_4b_lora_gpu_bundle"
         bundle_root.mkdir()
         ignore = shutil.ignore_patterns("__pycache__", "*.pyc", ".pytest_cache")
         shutil.copytree(PROJECT_ROOT / "training", bundle_root / "training", ignore=ignore)
@@ -100,7 +100,7 @@ def main() -> None:
     parser.add_argument(
         "--output",
         type=Path,
-        default=PROJECT_ROOT / "artifacts" / "qwen3_vl_8b_lora_gpu_bundle.tar.gz",
+        default=PROJECT_ROOT / "artifacts" / "qwen3_vl_4b_lora_gpu_bundle.tar.gz",
     )
     parser.add_argument(
         "--include-external-test",

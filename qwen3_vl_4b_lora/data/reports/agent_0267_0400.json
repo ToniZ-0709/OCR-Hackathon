@@ -3,8 +3,8 @@
   "audited_range": "priv_d_0267-priv_d_0400",
   "audited_count": 134,
   "inspected_method": "All 134 images were rendered in six contact-sheet batches, with individual full-size inspection of edge cases and all proposed gate disagreements.",
-  "canonical_source": "qwen3_vl_8b_lora/data/manual_review/manual_labels.csv",
-  "scope_assumption": "gate_verdict follows the current qwen3_vl_8b_lora README broad contract: a recognizable brand, named product, branded package, or branded promotional asset is PRESENT. The source dataset was originally FMCG-oriented, so the 13 non-FMCG branded items are flagged as scope-sensitive.",
+  "canonical_source": "qwen3_vl_4b_lora/data/manual_review/manual_labels.csv",
+  "scope_assumption": "gate_verdict follows the current qwen3_vl_4b_lora README broad contract: a recognizable brand, named product, branded package, or branded promotional asset is PRESENT. The source dataset was originally FMCG-oriented, so the 13 non-FMCG branded items are flagged as scope-sensitive.",
   "counts": {
     "source_present": 51,
     "source_absent": 83,

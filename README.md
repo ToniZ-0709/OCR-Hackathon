@@ -11,10 +11,12 @@
 
 This repository presents the official Phase 3 solution from Team ArrayOfSunshine. The system transitions from structured CSV extraction to context-aware free-text Vietnamese summarization in standard JSONL format.
 
-The architecture operates as a decoupled client-server system:
-1. Client Side (Streamlit Interface): Performs image enhancement, local OCR (PaddleOCR detection + VietOCR recognition), interactive visualization, and direct export of `submission.jsonl`.
-2. High-Throughput VLM Server (Remote Dedicated GPU): Serves Qwen3-VL-8B-Instruct via vLLM, incorporating OCR-gated empty checks and a prominence-ranked prompt injection framework to eliminate hallucinations.
-3. Concurrent Processing: Asynchronous multi-threaded engine overlapping local OCR with remote GPU inference to process image batches smoothly without blocking the UI.
+The current deployment runs the UI, optional OCR, and vLLM on one remote server while keeping separate CPU and GPU processes:
+
+1. Streamlit Interface: Accepts individual images, multiple files, or ZIP archives and exports `submission.jsonl`.
+2. Pure VLM Mode: Sends original images directly to the fine-tuned Qwen3-VL-4B endpoint. This is the default path and supports six concurrent HTTP requests.
+3. OCR + VLM Mode: Optionally performs enhancement, PaddleOCR detection, VietOCR recognition, and prominence-ranked OCR context injection before VLM inference.
+4. vLLM Server: Loads the merged checkpoint under model ID `fmcg-qwen3-vl-4b-lora` and keeps the API private on localhost.
 
 ---
 
@@ -22,9 +24,12 @@ The architecture operates as a decoupled client-server system:
 
 | Metric | Evaluation Method | Objective and Rule |
 |---|---|---|
-| Brand and Product F1 | Token-level Precision and Recall against Ground Truth | Accurate extraction of brand and product names embedded naturally in text. |
-| Anti-Hallucination | LLM-as-a-Judge penalty scoring | Strict penalty on fabricated brands, incorrect products, or ungrounded details. |
-| Empty Image Contract | Exact match validation | Images devoid of text, branding, or products must return an exact empty string `""`. |
+| Gate F1 | Non-empty versus exact empty output | Measures FMCG-presence classification without inventing entity annotations. |
+| Negative Rejection Accuracy | Exact empty-string match on ABSENT images | Penalizes false brand or product descriptions on negative images. |
+| PRESENT-only Macro Token F1 | Token overlap against audited positive references | Measures description similarity without allowing correct empty outputs to inflate the result. |
+| Output Format Compliance | Deterministic string checks | Rejects markdown, wrappers, meta commentary, and extra whitespace. |
+
+The measured 4B results and metric definitions are in `LORA_TRAINING_REPORT.md`. Brand Exact Match is not reported because the validation metadata has no audited brand spans.
 
 ---
 
@@ -33,16 +38,18 @@ The architecture operates as a decoupled client-server system:
 ```mermaid
 %%{init: {'flowchart': {'curve': 'linear'}}}%%
 flowchart TD
-    subgraph ClientStage ["Client: Streamlit Application (Local)"]
-        A["Input Image Batch (JPG/PNG/ZIP)"] --> B["Adaptive Preprocessing (LAB CLAHE, Gamma, Sharpen)"]
+    subgraph ClientStage ["Remote Streamlit Application"]
+        A["Input Image Batch (JPG/PNG/ZIP)"] --> M{"Selected Mode"}
+        M -->|"OCR + VLM"| B["Adaptive Preprocessing (LAB CLAHE, Gamma, Sharpen)"]
         B --> C["PP-OCRv5 Server Detection (Side-len: 1536px)"]
         C --> D["VietOCR Batched Recognition"]
         D --> E["Context Builder (Top-16 Prominence Lines)"]
+        M -->|"Pure VLM"| F
     end
 
     subgraph ServerStage ["Server: vLLM Inference Engine (Remote GPU)"]
         E --> F["Prompt Injection (10 Anti-Hallucination Rules + OCR Context)"]
-        F --> G["vLLM API Server (Qwen3-VL-8B-Instruct, Port 25241)"]
+        F --> G["vLLM API Server (fine-tuned Qwen3-VL-4B, Port 25241)"]
     end
 
     subgraph OutputStage ["Output Target: Direct Submission Export"]
@@ -52,14 +59,16 @@ flowchart TD
 ```
 
 ### Pipeline Workflow:
-1. Local Adaptive Preprocessing: Evaluates image lighting and applies targeted CLAHE (LAB color space) and unsharp masking.
-2. Local OCR Engine:
+
+1. Pure VLM path: Sends the original image directly to the fine-tuned 4B endpoint without OCR.
+2. Optional adaptive preprocessing: Evaluates image lighting and applies targeted CLAHE and unsharp masking.
+3. Optional OCR engine:
    * Text Detection: PP-OCRv5 server detection model with reading-order polygon sorting.
    * Text Recognition: VietOCR transformer model reading cropped text boxes.
-3. Remote VLM Summarization:
+4. VLM summarization:
    * Formats prompt with ranked OCR context and 10 anti-hallucination rules.
-   * Sends image and context to the remote GPU running Qwen3-VL-8B via vLLM.
-4. Submission Generation:
+   * Sends image and context to the remote GPU running the fine-tuned Qwen3-VL-4B via vLLM.
+5. Submission generation:
    * Real-time generation of contextual summaries.
    * Exports valid `submission.jsonl` adhering to the contest schema.
 
@@ -67,14 +76,12 @@ flowchart TD
 
 ## 4. Hardware and Environment Specification
 
-### Local Client (Streamlit App):
-* Hardware: Standard PC / Laptop (CPU or entry-level GPU).
-* Tasks: Runs Streamlit web UI, image loading, PaddleOCR detection, VietOCR recognition, and file saving.
+### Remote server
 
-### Remote Server (vLLM Engine):
-* Hardware: Dedicated Linux GPU Server (NVIDIA H100 20GB MIG).
-* Tasks: High-throughput vLLM OpenAI-compatible server hosting Qwen3-VL-8B-Instruct.
-* Connectivity: Exposed via encrypted HTTPS tunnel (ngrok / reverse tunnel).
+* Hardware: Linux server with NVIDIA H100 20GB MIG and four CPU cores available to the container.
+* CPU tasks: Streamlit, optional PaddleOCR/VietOCR, image loading, and output generation.
+* GPU task: vLLM OpenAI-compatible endpoint for the fine-tuned Qwen3-VL-4B model.
+* Connectivity: Only Streamlit port 8501 is exposed through ngrok. The vLLM API remains on `127.0.0.1:25241`.
 
 ---
 

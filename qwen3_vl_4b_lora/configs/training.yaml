@@ -1,4 +1,4 @@
-model: Qwen/Qwen3-VL-8B-Instruct
+model: Qwen/Qwen3-VL-4B-Instruct
 seed: 42
 tuner_type: lora
 quant_method: bnb

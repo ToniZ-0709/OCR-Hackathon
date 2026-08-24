@@ -16,14 +16,15 @@ fi
 export CUDA_VISIBLE_DEVICES="${CUDA_VISIBLE_DEVICES:-0}"
 export PYTORCH_CUDA_ALLOC_CONF="${PYTORCH_CUDA_ALLOC_CONF:-expandable_segments:True}"
 export IMAGE_MAX_TOKEN_NUM="${IMAGE_MAX_TOKEN_NUM:-1024}"
+export USE_HF="${USE_HF:-1}"
 
-OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/artifacts/training/qwen3_vl_8b_qlora}"
-ATTN_IMPL="${ATTN_IMPL:-flash_attn}"
+OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/artifacts/training/qwen3_vl_4b_qlora}"
+ATTN_IMPL="${ATTN_IMPL:-sdpa}"
 MAX_LENGTH="${MAX_LENGTH:-2048}"
 MAX_STEPS="${MAX_STEPS:--1}"
 
 .venv/bin/swift sft \
-  --model Qwen/Qwen3-VL-8B-Instruct \
+  --model Qwen/Qwen3-VL-4B-Instruct \
   --dataset "$PROJECT_ROOT/data/final/train_350.jsonl" \
   --val_dataset "$PROJECT_ROOT/data/final/validation_50.jsonl" \
   --tuner_type lora \

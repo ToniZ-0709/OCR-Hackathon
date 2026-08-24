@@ -28,9 +28,9 @@ __pycache__/
 *.bin
 *.pt
 *.pth
-qwen3_vl_8b_lora/artifacts/raw_training_runs/
-qwen3_vl_8b_lora/artifacts/best_adapter/adapter_model.safetensors
-qwen3_vl_8b_lora/artifacts/qwen3_vl_8b_lora_gpu_bundle.tar.gz
+qwen3_vl_4b_lora/artifacts/raw_training_runs/
+qwen3_vl_4b_lora/artifacts/best_adapter/adapter_model.safetensors
+qwen3_vl_4b_lora/artifacts/qwen3_vl_4b_lora_gpu_bundle.tar.gz
 
 # OS generated files
 .DS_Store

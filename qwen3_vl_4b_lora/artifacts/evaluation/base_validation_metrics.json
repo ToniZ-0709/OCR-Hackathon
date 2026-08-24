@@ -1,0 +1,30 @@
+{
+  "reference_path": "data\\final\\validation_50.jsonl",
+  "prediction_path": "artifacts\\evaluation\\base_validation_predictions.jsonl",
+  "alignment": "image_id",
+  "sample_count": 50,
+  "class_counts": {
+    "present": 28,
+    "absent": 22
+  },
+  "gate_confusion": {
+    "tp": 28,
+    "fp": 22,
+    "fn": 0,
+    "tn": 0
+  },
+  "gate_accuracy": 0.56,
+  "gate_precision": 0.56,
+  "gate_recall": 1.0,
+  "gate_f1": 0.717948717948718,
+  "negative_rejection_accuracy": 0.0,
+  "present_response_rate": 1.0,
+  "normalized_exact_match": 0.0,
+  "macro_token_f1": 0.13378771011683308,
+  "macro_character_similarity": 0.17607380590059712,
+  "present_normalized_exact_match": 0.0,
+  "present_macro_token_f1": 0.23890662520863049,
+  "present_macro_character_similarity": 0.3144175105367806,
+  "output_format_compliance": 0.8,
+  "metric_note": "Brand Exact Match is not reported because the validation metadata has no brand-span annotations. Macro token F1 compares the complete generated description with the audited reference."
+}

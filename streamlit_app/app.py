@@ -5,12 +5,14 @@ import io
 import time
 import json
 import base64
+import queue
 import re
 import zipfile
 import urllib.request
 import urllib3
 import requests
 from io import BytesIO
+from contextlib import contextmanager
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ─── 1. CRITICAL: Import Torch First on Windows (Avoids DLL collisions) ───
@@ -45,6 +47,33 @@ from PIL import Image, ImageDraw
 import cv2
 import streamlit as st
 from openai import OpenAI
+
+DEFAULT_VLLM_URL = os.environ.get(
+    "VLLM_BASE_URL", "http://127.0.0.1:25241/v1"
+)
+DEFAULT_VLLM_MODEL = os.environ.get("VLLM_MODEL_ID", "fmcg-qwen3-vl-4b-lora")
+OCR_DEVICE = os.environ.get("OCR_DEVICE", "auto").strip().lower()
+OCR_CPU_THREADS = max(1, int(os.environ.get("OCR_CPU_THREADS", "4")))
+OCR_PARALLEL_WORKERS = max(
+    1, min(4, int(os.environ.get("OCR_PARALLEL_WORKERS", "3")))
+)
+VLM_BATCH_WORKERS = max(
+    1, min(6, int(os.environ.get("VLM_BATCH_WORKERS", "6")))
+)
+
+if OCR_DEVICE in {"cpu", "none", "off"} or not torch.cuda.is_available():
+    torch.set_num_threads(OCR_CPU_THREADS)
+    try:
+        torch.set_num_interop_threads(1)
+    except RuntimeError:
+        pass
+
+
+def ocr_gpu_enabled():
+    """Select the OCR device without probing CUDA when CPU mode is forced."""
+    if OCR_DEVICE in {"cpu", "none", "off"}:
+        return False
+    return torch.cuda.is_available()
 
 # Fix PIL._util compatibility
 import PIL
@@ -122,10 +151,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ─── Model & Engine Initialization (Cached) ───
-@st.cache_resource(show_spinner="Loading High-Precision OCR Models...")
-def load_ocr_engines():
-    has_gpu = torch.cuda.is_available()
-    
+def create_ocr_engine(has_gpu):
     # 1. VietOCR Transformer Recognition Engine
     recognizer = None
     try:
@@ -146,6 +172,7 @@ def load_ocr_engines():
         detector = TextDetection(
             model_name="PP-OCRv4_mobile_det",
             device="gpu:0" if has_gpu else "cpu",
+            enable_mkldnn=False,
             limit_side_len=1536,
             limit_type="max",
             thresh=0.3,
@@ -161,11 +188,36 @@ def load_ocr_engines():
                 use_textline_orientation=False,
                 lang="vi",
                 device="gpu" if has_gpu else "cpu",
+                enable_mkldnn=False,
             )
         except Exception:
             detector = "cv2_fallback"
 
-    return detector, recognizer, has_gpu
+    return detector, recognizer
+
+
+class OCREnginePool:
+    def __init__(self, engines, has_gpu):
+        self.has_gpu = has_gpu
+        self.size = len(engines)
+        self._available = queue.Queue(maxsize=self.size)
+        for engine in engines:
+            self._available.put(engine)
+
+    @contextmanager
+    def acquire(self):
+        engine = self._available.get()
+        try:
+            yield engine
+        finally:
+            self._available.put(engine)
+
+
+@st.cache_resource(show_spinner="Loading parallel OCR workers...")
+def load_ocr_engine_pool(worker_count=OCR_PARALLEL_WORKERS):
+    has_gpu = ocr_gpu_enabled()
+    engines = [create_ocr_engine(has_gpu) for _ in range(worker_count)]
+    return OCREnginePool(engines, has_gpu)
 
 # ─── Image Preprocessing & OCR Functions ───
 def classify_image(img_bgr):
@@ -233,7 +285,7 @@ def crop_padding(image, bbox, pad=8):
     return image[y_min:y_max, x_min:x_max]
 
 def sort_boxes(boxes):
-    if not boxes: return []
+    if boxes is None or len(boxes) == 0: return []
     boxes = sorted(boxes, key=lambda b: b[0][1])
     threshold = np.median([abs(b[2][1] - b[0][1]) for b in boxes]) * 0.3 if len(boxes) > 0 else 10
     sorted_boxes, cur_line, base_y = [], [boxes[0]], boxes[0][0][1]
@@ -277,7 +329,7 @@ def detect_regions_opencv(img_cv2, max_boxes=16):
     boxes = sorted(boxes, key=poly_area, reverse=True)[:max_boxes]
     return boxes
 
-def run_ocr_pipeline(img_cv2, detector, recognizer, max_boxes=16, min_crop=8):
+def run_ocr_pipeline_with_engine(img_cv2, detector, recognizer, max_boxes=16, min_crop=8):
     if recognizer is None:
         return "", []
 
@@ -288,19 +340,22 @@ def run_ocr_pipeline(img_cv2, detector, recognizer, max_boxes=16, min_crop=8):
             if hasattr(detector, "predict"):
                 res = list(detector.predict(img_cv2))
                 if res and len(res) > 0:
-                    boxes = res[0].get("dt_polys", res[0].get("dt_boxes", []))
+                    detected_boxes = res[0].get("dt_polys", res[0].get("dt_boxes", []))
+                    if detected_boxes is not None:
+                        boxes = [np.asarray(box).tolist() for box in detected_boxes]
             elif hasattr(detector, "ocr"):
                 res = detector.ocr(img_cv2)
                 if res and len(res) > 0 and res[0]:
                     boxes = [line[0] for line in res[0] if line]
-        except Exception:
+        except Exception as exc:
+            print(f"PaddleOCR detection failed, using OpenCV fallback: {exc}", flush=True)
             boxes = []
 
     # 2. Fallback to OpenCV morphological detector if Paddle failed
-    if not boxes:
+    if boxes is None or len(boxes) == 0:
         boxes = detect_regions_opencv(img_cv2, max_boxes=max_boxes)
 
-    if not boxes:
+    if boxes is None or len(boxes) == 0:
         return "", []
 
     # Prune and sort in reading order
@@ -322,6 +377,25 @@ def run_ocr_pipeline(img_cv2, detector, recognizer, max_boxes=16, min_crop=8):
             continue
 
     return postprocess_ocr(" ".join(texts)), bdata
+
+
+def run_ocr_pipeline(img_cv2, max_boxes=16, min_crop=8):
+    """Run OCR with one exclusively acquired engine from the CPU worker pool."""
+    with load_ocr_engine_pool().acquire() as (detector, recognizer):
+        engine_id = id(recognizer)
+        started = time.time()
+        print(f"OCR worker {engine_id} started", flush=True)
+        try:
+            return run_ocr_pipeline_with_engine(
+                img_cv2,
+                detector,
+                recognizer,
+                max_boxes=max_boxes,
+                min_crop=min_crop,
+            )
+        finally:
+            elapsed = time.time() - started
+            print(f"OCR worker {engine_id} finished in {elapsed:.2f}s", flush=True)
 
 # ─── VLM Prompt Templates ───
 PROMPT_GATE = "Ảnh này có chứa chữ đọc được, hoặc có nhãn hàng, logo, tên sản phẩm nào không? Chỉ trả lời đúng một từ: CÓ hoặc KHÔNG."
@@ -354,6 +428,21 @@ Banner quảng cáo chương trình mua 2 tặng 1 của Nestlé Milo trên nề
 __OCR_CONTEXT__
 
 Nhắc lại: nếu ảnh không có chữ đọc được và không có nhãn hàng/sản phẩm, trả về chuỗi rỗng.
+Viết mô tả ngay:"""
+
+PROMPT_PURE_VLM = """Bạn viết mô tả ngắn cho ảnh thu thập từ mạng xã hội Việt Nam.
+
+Hãy quan sát trực tiếp ảnh và viết một đoạn mô tả ngắn gọn bằng tiếng Việt có dấu.
+
+Quy tắc:
+1. Nêu bối cảnh và nội dung chính nhìn thấy trong ảnh.
+2. Chỉ nêu tên nhãn hàng, tên sản phẩm, giá hoặc chương trình khuyến mãi khi nhìn thấy rõ trong ảnh.
+3. Giữ nguyên chính tả của tên nhãn hàng và tên sản phẩm nhìn thấy rõ.
+4. Không suy đoán, không bịa và không dùng các cụm từ như "có thể là", "có vẻ" hoặc "dường như".
+5. Không nhắc đến nhiệm vụ, mô hình, OCR hoặc cụm từ "hình ảnh này".
+6. Nếu ảnh không có chữ đọc được và không có nhãn hàng hoặc sản phẩm nào, trả về chuỗi rỗng, không xuất bất kỳ ký tự nào.
+7. Chỉ xuất nội dung mô tả, không lời dẫn, không ngoặc kép và không markdown.
+
 Viết mô tả ngay:"""
 
 def build_ocr_context(ocr_text, box_data=None, n_ctx=16):
@@ -435,28 +524,38 @@ with st.sidebar:
     st.subheader("⚙️ Pipeline Mode")
     run_mode = st.radio(
         "Select Execution Engine",
-        ["🚀 Full Pipeline (OCR + Remote VLM Server)", "⚡ Standalone OCR Fallback (Offline Mode - No GPU Server)"],
-        index=0,
-        help="Use Standalone OCR if your remote GPU server is currently offline."
+        [
+            "🚀 Full Pipeline (OCR + Remote VLM Server)",
+            "🧠 Pure VLM (No OCR)",
+            "⚡ Standalone OCR Fallback (Offline Mode - No GPU Server)",
+        ],
+        index=1,
+        help="Pure VLM sends the original image directly to Qwen3-VL and never runs OCR."
     )
+    pure_vlm_mode = "Pure VLM" in run_mode
 
     st.divider()
     st.subheader("🖥️ Local Hardware Info")
-    if torch.cuda.is_available():
-        st.success(f"NVIDIA GPU: {torch.cuda.get_device_name(0)}")
+    if pure_vlm_mode:
+        st.info("OCR disabled | Original image sent directly to Qwen3-VL")
+    elif ocr_gpu_enabled():
+        st.success(f"OCR device: {torch.cuda.get_device_name(0)}")
     else:
-        st.info("Local Engine: High-Performance CPU Mode (AMD Ryzen / Intel)")
+        st.info(
+            f"OCR device: CPU | {OCR_PARALLEL_WORKERS} parallel workers "
+            "(GPU reserved for vLLM)"
+        )
 
     st.divider()
     st.subheader("🌐 Remote VLM Server")
     vllm_url = st.text_input(
         "API Base URL",
-        value=st.session_state.get("vllm_url", "https://delay-buffer-unnerve.ngrok-free.dev/v1"),
-        help="Enter the ngrok public URL or remote server IP (e.g. http://<IP>:8000/v1)"
+        value=st.session_state.get("vllm_url", DEFAULT_VLLM_URL),
+        help="Use http://127.0.0.1:25241/v1 when Streamlit and vLLM run on the same server."
     )
     model_name = st.text_input(
         "Model ID",
-        value="Qwen/Qwen3-VL-8B-Instruct"
+        value=DEFAULT_VLLM_MODEL
     )
     api_key = st.text_input("API Key (Optional)", value="EMPTY", type="password")
 
@@ -473,18 +572,22 @@ with st.sidebar:
     st.subheader("🎛️ Inference Parameters")
     temperature = st.slider("Temperature", min_value=0.0, max_value=1.0, value=0.0, step=0.05)
     max_tokens = st.slider("Max Output Tokens", min_value=64, max_value=1024, value=384, step=32)
-    max_ocr_boxes = st.slider("Max OCR Boxes Context", min_value=4, max_value=32, value=16, step=2)
+    if pure_vlm_mode:
+        max_ocr_boxes = 16
+        st.caption("OCR parameters are disabled in Pure VLM mode.")
+    else:
+        max_ocr_boxes = st.slider("Max OCR Boxes Context", min_value=4, max_value=32, value=16, step=2)
 
 # Initialize OpenAI Client
 vllm_client = OpenAI(base_url=vllm_url, api_key=api_key)
 
 # ─── Main UI Tabs ───
 st.markdown('<div class="main-header">☀️ FMCG Multimodal Image Summarization</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-header">Automated End-to-End OCR & Vision-Language Model Pipeline (VietOCR + Qwen3-VL-8B)</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-header">Automated End-to-End OCR & Vision-Language Model Pipeline (VietOCR + Qwen3-VL-4B)</div>', unsafe_allow_html=True)
 
 tab_single, tab_batch, tab_arch = st.tabs(["📸 Single Image Demo", "⚡ Batch Image & ZIP Processing", "ℹ️ System Architecture"])
 
-detector, recognizer, has_gpu = load_ocr_engines()
+ocr_engine_pool = None if pure_vlm_mode else load_ocr_engine_pool()
 
 def generate_ocr_fallback_summary(ocr_text, box_data, category):
     if not ocr_text or not ocr_text.strip():
@@ -534,17 +637,25 @@ with tab_single:
             start_time = time.time()
 
             with st.status("Processing Pipeline...", expanded=True) as status:
-                # Step 1: Preprocessing
-                st.write("🔧 Step 1: Adaptive Preprocessing (LAB CLAHE & Sharpen)...")
-                img_cv2, category = preprocess(image_pil)
-                st.markdown(f'Category Detected: <span class="status-badge badge-category">{category.upper()}</span>', unsafe_allow_html=True)
+                category = "not_used"
+                ocr_text, box_data = "", []
+                ocr_elapsed = 0.0
+                img_cv2 = None
 
-                # Step 2: OCR Detection & Recognition
-                st.write("🔍 Step 2: OCR Text Detection & Recognition (VietOCR)...")
-                ocr_time_start = time.time()
-                ocr_text, box_data = run_ocr_pipeline(img_cv2, detector, recognizer, max_boxes=max_ocr_boxes)
-                ocr_elapsed = time.time() - ocr_time_start
-                st.write(f"✓ OCR finished in {ocr_elapsed:.2f}s (Found {len(box_data)} text regions)")
+                if pure_vlm_mode:
+                    st.write("🧠 Pure VLM: Skipping preprocessing and OCR...")
+                else:
+                    # Step 1: Preprocessing
+                    st.write("🔧 Step 1: Adaptive Preprocessing (LAB CLAHE & Sharpen)...")
+                    img_cv2, category = preprocess(image_pil)
+                    st.markdown(f'Category Detected: <span class="status-badge badge-category">{category.upper()}</span>', unsafe_allow_html=True)
+
+                    # Step 2: OCR Detection & Recognition
+                    st.write("🔍 Step 2: OCR Text Detection & Recognition (VietOCR)...")
+                    ocr_time_start = time.time()
+                    ocr_text, box_data = run_ocr_pipeline(img_cv2, max_boxes=max_ocr_boxes)
+                    ocr_elapsed = time.time() - ocr_time_start
+                    st.write(f"✓ OCR finished in {ocr_elapsed:.2f}s (Found {len(box_data)} text regions)")
 
                 # Step 3: Visual Bounding Boxes
                 if box_data:
@@ -563,7 +674,22 @@ with tab_single:
                 final_summary = ""
                 used_fallback = False
 
-                if "Standalone OCR" in run_mode:
+                if pure_vlm_mode:
+                    st.write("🧠 Calling Qwen3-VL directly with the original image...")
+                    b64_img = encode_image(image_pil)
+                    try:
+                        final_summary = call_vlm_api(
+                            vllm_client,
+                            model_name,
+                            b64_img,
+                            PROMPT_PURE_VLM,
+                            max_tokens=max_tokens,
+                            temperature=temperature,
+                        ).strip()
+                    except Exception as e:
+                        st.warning(f"⚠️ Pure VLM request failed ({e}).")
+                        final_summary = ""
+                elif "Standalone OCR" in run_mode:
                     st.write("⚡ Standalone OCR Mode: Generating description directly from OCR...")
                     final_summary = generate_ocr_fallback_summary(ocr_text, box_data, category)
                     used_fallback = True
@@ -607,7 +733,10 @@ with tab_single:
                 formatted_html = "<br>".join([f"<div style='margin-bottom: 4px;'>{line}</div>" if line.strip().startswith(('📸', '🏷️', '📝')) else f"<div style='margin-left: 16px; margin-bottom: 2px;'>{line}</div>" for line in final_summary.split('\n')])
                 st.markdown(f'<div class="result-box">{formatted_html}</div>', unsafe_allow_html=True)
             
-            st.caption(f"⏱️ Total Latency: {total_elapsed:.2f}s (OCR: {ocr_elapsed:.2f}s | Processing: {total_elapsed-ocr_elapsed:.2f}s)")
+            if pure_vlm_mode:
+                st.caption(f"⏱️ Total Latency: {total_elapsed:.2f}s (Pure VLM, OCR skipped)")
+            else:
+                st.caption(f"⏱️ Total Latency: {total_elapsed:.2f}s (OCR: {ocr_elapsed:.2f}s | Processing: {total_elapsed-ocr_elapsed:.2f}s)")
 
 # ─── Tab 2: Batch Image & ZIP Processing ───
 with tab_batch:
@@ -647,7 +776,20 @@ with tab_batch:
 
     col_b_cfg, col_b_run = st.columns([1, 1])
     with col_b_cfg:
-        n_workers = st.slider("Concurrent Worker Threads", min_value=1, max_value=16, value=6, help="Number of parallel worker threads")
+        worker_limit = VLM_BATCH_WORKERS if pure_vlm_mode else OCR_PARALLEL_WORKERS
+        worker_label = "Concurrent VLM Requests" if pure_vlm_mode else "Concurrent OCR Workers"
+        worker_help = (
+            "Images are sent directly to Qwen3-VL without OCR."
+            if pure_vlm_mode
+            else "Each worker owns an independent PaddleOCR and VietOCR engine."
+        )
+        n_workers = st.slider(
+            worker_label,
+            min_value=1,
+            max_value=worker_limit,
+            value=worker_limit,
+            help=worker_help,
+        )
     
     if all_batch_images:
         st.info(f"Loaded total **{len(all_batch_images)} images** ready for batch summarization.")
@@ -675,8 +817,23 @@ with tab_batch:
                         raw_data = uploaded_img._data
 
                     img_pil = Image.open(io.BytesIO(raw_data)).convert("RGB")
+                    if pure_vlm_mode:
+                        b64 = encode_image(img_pil)
+                        try:
+                            summary = call_vlm_api(
+                                vllm_client,
+                                model_name,
+                                b64,
+                                PROMPT_PURE_VLM,
+                                max_tokens=max_tokens,
+                                temperature=temperature,
+                            )
+                            return {"image_id": img_id, "summary": summary.strip()}
+                        except Exception as exc:
+                            return {"image_id": img_id, "summary": "", "error": str(exc)}
+
                     img_cv2, cat = preprocess(img_pil)
-                    ocr_txt, bdata = run_ocr_pipeline(img_cv2, detector, recognizer, max_boxes=max_ocr_boxes)
+                    ocr_txt, bdata = run_ocr_pipeline(img_cv2, max_boxes=max_ocr_boxes)
                     
                     if "Standalone OCR" in run_mode:
                         summary = generate_ocr_fallback_summary(ocr_txt, bdata, cat)
@@ -743,10 +900,11 @@ with tab_arch:
        - **Text Recognition:** VietOCR (`vgg_transformer` with greedy decoding).
        - **Box Sorting & Pruning:** Top-16 boxes ordered top-to-bottom, left-to-right.
        - **ZIP & Batch Support:** In-memory extraction and concurrent worker threads.
+       - **Pure VLM Mode:** Sends original images directly to Qwen3-VL without loading or running OCR.
        - **Offline Fallback Engine:** Automatically converts OCR text into structured descriptions if the remote VLM GPU is unreachable.
     
     2. **Remote GPU Server (H100 MIG 20GB):**
-       - **Inference Engine:** Serves `Qwen/Qwen3-VL-8B-Instruct` with the fine-tuned FMCG LoRA adapter.
+       - **Inference Engine:** Serves `Qwen/Qwen3-VL-4B-Instruct` with the fine-tuned FMCG LoRA adapter.
        - **Reverse Tunneling via ngrok:** Secure HTTPS tunneling.
        - **Continuous Batching:** Concurrent requests handled seamlessly.
     

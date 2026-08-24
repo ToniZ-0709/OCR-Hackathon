@@ -1,0 +1,21 @@
+seed: 42
+temperature: 0.0
+max_new_tokens: 128
+validation_size: 50
+metrics:
+  - gate_accuracy
+  - gate_f1
+  - negative_rejection_accuracy
+  - present_response_rate
+  - normalized_exact_match
+  - macro_token_f1
+  - macro_character_similarity
+  - present_normalized_exact_match
+  - present_macro_token_f1
+  - present_macro_character_similarity
+  - output_format_compliance
+brand_exact_match_supported: false
+promotion:
+  minimum_relative_false_nonempty_reduction: 0.25
+  maximum_present_recall_drop: 0.05
+  require_non_decreasing_macro_token_f1: true

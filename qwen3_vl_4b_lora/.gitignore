@@ -10,8 +10,12 @@ data/raw/
 data/state.sqlite3
 data/review/review_state.jsonl
 
-# Generated outputs and model artifacts
-artifacts/
+# Generated outputs and large model artifacts
+artifacts/raw_training_runs/
+artifacts/training/training_4b.log
+artifacts/best_adapter/adapter_model.safetensors
+artifacts/best_adapter/args.json
+artifacts/*.tar.gz
 output/
 checkpoints/
 *.tar.gz
